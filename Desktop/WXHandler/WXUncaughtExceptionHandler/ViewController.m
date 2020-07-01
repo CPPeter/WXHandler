@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "LogUploadService.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UIAlertViewDelegate,LogUploadServiceDelegate>
+@property (nonatomic,strong) LogUploadService *logUploadService;
 @end
 
 @implementation ViewController
@@ -60,8 +61,29 @@
 }
 
 -(void)alertView {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"标题" message:@"正常的操作!" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"标题" message:@"上传日志!" delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    alert.delegate = self;
     [alert show];
+    
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    #pragma mark 上传本地日志
+    self.logUploadService = [[LogUploadService alloc] init];
+    self.logUploadService.delegate = self;
+    [self.logUploadService uploadLog];
+}
+
+
+-(void)logUploadDidFinish
+{//日志上传成功
+//    [CKHUDLoadingService.share dismiss];
+//    [CKToast.sharedInstance showToastWithText:@""];
+}
+
+-(void)logUploadDidFailWithError:(NSError *)error
+{//日志上传失败
+//    [CKHUDLoadingService.share dismiss];
+//    [CKToast.sharedInstance showToastWithText:error.localizedFailureReason];
 }
 
 - (void)didReceiveMemoryWarning {

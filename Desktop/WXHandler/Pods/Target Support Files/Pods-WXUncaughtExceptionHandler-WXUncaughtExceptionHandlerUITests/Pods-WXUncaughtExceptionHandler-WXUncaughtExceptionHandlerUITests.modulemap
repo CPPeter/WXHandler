@@ -1,0 +1,6 @@
+framework module Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests {
+  umbrella header "Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

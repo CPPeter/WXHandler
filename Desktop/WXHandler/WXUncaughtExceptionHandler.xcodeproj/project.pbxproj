@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9EE0CDD2DADE0B8021F9CA /* Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF168BC7878C0539F3F3777 /* Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework */; };
+		5071C48D44B98FF846EB0404 /* Pods_WXUncaughtExceptionHandlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A26D47EE1B05088FD86304 /* Pods_WXUncaughtExceptionHandlerTests.framework */; };
 		AF84F3FB212432C900BE9DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84F3FA212432C900BE9DA7 /* AppDelegate.m */; };
 		AF84F3FE212432C900BE9DA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84F3FD212432C900BE9DA7 /* ViewController.m */; };
 		AF84F401212432C900BE9DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF84F3FF212432C900BE9DA7 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 		AF84F413212432CC00BE9DA7 /* WXUncaughtExceptionHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84F412212432CC00BE9DA7 /* WXUncaughtExceptionHandlerTests.m */; };
 		AF84F41E212432CC00BE9DA7 /* WXUncaughtExceptionHandlerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84F41D212432CC00BE9DA7 /* WXUncaughtExceptionHandlerUITests.m */; };
 		AF84F42E2124330700BE9DA7 /* WXUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84F42D2124330700BE9DA7 /* WXUncaughtExceptionHandler.m */; };
+		C194A8084D5D8FDC3CAF5A17 /* Pods_WXUncaughtExceptionHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43E71610AB5EB39D8FB2C88 /* Pods_WXUncaughtExceptionHandler.framework */; };
+		EAC8FF8324AC855300B6FB62 /* LogUploadService.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC8FF8224AC855300B6FB62 /* LogUploadService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B0101498EEF1177D6F3604 /* Pods-WXUncaughtExceptionHandlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandlerTests.release.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandlerTests/Pods-WXUncaughtExceptionHandlerTests.release.xcconfig"; sourceTree = "<group>"; };
+		1AF168BC7878C0539F3F3777 /* Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		260B674D7529D8406D2D321A /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.debug.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		564FFDBF258995EADE68AD21 /* Pods-WXUncaughtExceptionHandlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandlerTests.debug.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandlerTests/Pods-WXUncaughtExceptionHandlerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59C54FFB8DEF787042A0E552 /* Pods-WXUncaughtExceptionHandler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandler.debug.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandler/Pods-WXUncaughtExceptionHandler.debug.xcconfig"; sourceTree = "<group>"; };
+		81A26D47EE1B05088FD86304 /* Pods_WXUncaughtExceptionHandlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXUncaughtExceptionHandlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF84F3F6212432C900BE9DA7 /* WXUncaughtExceptionHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXUncaughtExceptionHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF84F3F9212432C900BE9DA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF84F3FA212432C900BE9DA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +64,11 @@
 		AF84F41F212432CC00BE9DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF84F42C2124330700BE9DA7 /* WXUncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		AF84F42D2124330700BE9DA7 /* WXUncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		B43E71610AB5EB39D8FB2C88 /* Pods_WXUncaughtExceptionHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXUncaughtExceptionHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5981E5BC5EB4128151D204F /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.release.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D89CB87A525B16DB572D4E20 /* Pods-WXUncaughtExceptionHandler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXUncaughtExceptionHandler.release.xcconfig"; path = "Target Support Files/Pods-WXUncaughtExceptionHandler/Pods-WXUncaughtExceptionHandler.release.xcconfig"; sourceTree = "<group>"; };
+		EAC8FF8124AC855200B6FB62 /* LogUploadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUploadService.h; sourceTree = "<group>"; };
+		EAC8FF8224AC855300B6FB62 /* LogUploadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUploadService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C194A8084D5D8FDC3CAF5A17 /* Pods_WXUncaughtExceptionHandler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5071C48D44B98FF846EB0404 /* Pods_WXUncaughtExceptionHandlerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9EE0CDD2DADE0B8021F9CA /* Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EEDFEB2C68F20B470AEEED3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B43E71610AB5EB39D8FB2C88 /* Pods_WXUncaughtExceptionHandler.framework */,
+				1AF168BC7878C0539F3F3777 /* Pods_WXUncaughtExceptionHandler_WXUncaughtExceptionHandlerUITests.framework */,
+				81A26D47EE1B05088FD86304 /* Pods_WXUncaughtExceptionHandlerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF84F3ED212432C900BE9DA7 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +116,8 @@
 				AF84F411212432CC00BE9DA7 /* WXUncaughtExceptionHandlerTests */,
 				AF84F41C212432CC00BE9DA7 /* WXUncaughtExceptionHandlerUITests */,
 				AF84F3F7212432C900BE9DA7 /* Products */,
+				BB15DA8616FC08F500ACE8D5 /* Pods */,
+				4EEDFEB2C68F20B470AEEED3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,8 +171,23 @@
 			children = (
 				AF84F42C2124330700BE9DA7 /* WXUncaughtExceptionHandler.h */,
 				AF84F42D2124330700BE9DA7 /* WXUncaughtExceptionHandler.m */,
+				EAC8FF8124AC855200B6FB62 /* LogUploadService.h */,
+				EAC8FF8224AC855300B6FB62 /* LogUploadService.m */,
 			);
 			path = WXUncaughtExceptionHandler;
+			sourceTree = "<group>";
+		};
+		BB15DA8616FC08F500ACE8D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59C54FFB8DEF787042A0E552 /* Pods-WXUncaughtExceptionHandler.debug.xcconfig */,
+				D89CB87A525B16DB572D4E20 /* Pods-WXUncaughtExceptionHandler.release.xcconfig */,
+				260B674D7529D8406D2D321A /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.debug.xcconfig */,
+				D5981E5BC5EB4128151D204F /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.release.xcconfig */,
+				564FFDBF258995EADE68AD21 /* Pods-WXUncaughtExceptionHandlerTests.debug.xcconfig */,
+				00B0101498EEF1177D6F3604 /* Pods-WXUncaughtExceptionHandlerTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF84F422212432CC00BE9DA7 /* Build configuration list for PBXNativeTarget "WXUncaughtExceptionHandler" */;
 			buildPhases = (
+				A5C7279E6241D895CF3334A1 /* [CP] Check Pods Manifest.lock */,
 				AF84F3F2212432C900BE9DA7 /* Sources */,
 				AF84F3F3212432C900BE9DA7 /* Frameworks */,
 				AF84F3F4212432C900BE9DA7 /* Resources */,
+				BF027DE883AD6A897EAC6132 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF84F425212432CC00BE9DA7 /* Build configuration list for PBXNativeTarget "WXUncaughtExceptionHandlerTests" */;
 			buildPhases = (
+				98AC5AC524F70ED9DE6194B9 /* [CP] Check Pods Manifest.lock */,
 				AF84F40A212432CC00BE9DA7 /* Sources */,
 				AF84F40B212432CC00BE9DA7 /* Frameworks */,
 				AF84F40C212432CC00BE9DA7 /* Resources */,
@@ -187,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF84F428212432CC00BE9DA7 /* Build configuration list for PBXNativeTarget "WXUncaughtExceptionHandlerUITests" */;
 			buildPhases = (
+				4F9256EED13757187A17EA79 /* [CP] Check Pods Manifest.lock */,
 				AF84F415212432CC00BE9DA7 /* Sources */,
 				AF84F416212432CC00BE9DA7 /* Frameworks */,
 				AF84F417212432CC00BE9DA7 /* Resources */,
+				13024C979965057A64235287 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +320,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13024C979965057A64235287 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9256EED13757187A17EA79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98AC5AC524F70ED9DE6194B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WXUncaughtExceptionHandlerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C7279E6241D895CF3334A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WXUncaughtExceptionHandler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF027DE883AD6A897EAC6132 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler/Pods-WXUncaughtExceptionHandler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler/Pods-WXUncaughtExceptionHandler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WXUncaughtExceptionHandler/Pods-WXUncaughtExceptionHandler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF84F3F2212432C900BE9DA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,6 +430,7 @@
 			files = (
 				AF84F3FE212432C900BE9DA7 /* ViewController.m in Sources */,
 				AF84F409212432CC00BE9DA7 /* main.m in Sources */,
+				EAC8FF8324AC855300B6FB62 /* LogUploadService.m in Sources */,
 				AF84F42E2124330700BE9DA7 /* WXUncaughtExceptionHandler.m in Sources */,
 				AF84F3FB212432C900BE9DA7 /* AppDelegate.m in Sources */,
 			);
@@ -445,40 +599,49 @@
 		};
 		AF84F423212432CC00BE9DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C54FFB8DEF787042A0E552 /* Pods-WXUncaughtExceptionHandler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WXUncaughtExceptionHandler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.WXUncaughtExceptionHandler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AF84F424212432CC00BE9DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89CB87A525B16DB572D4E20 /* Pods-WXUncaughtExceptionHandler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WXUncaughtExceptionHandler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.WXUncaughtExceptionHandler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		AF84F426212432CC00BE9DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564FFDBF258995EADE68AD21 /* Pods-WXUncaughtExceptionHandlerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +660,7 @@
 		};
 		AF84F427212432CC00BE9DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B0101498EEF1177D6F3604 /* Pods-WXUncaughtExceptionHandlerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +679,7 @@
 		};
 		AF84F429212432CC00BE9DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260B674D7529D8406D2D321A /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WXUncaughtExceptionHandlerUITests/Info.plist;
@@ -532,6 +697,7 @@
 		};
 		AF84F42A212432CC00BE9DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5981E5BC5EB4128151D204F /* Pods-WXUncaughtExceptionHandler-WXUncaughtExceptionHandlerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WXUncaughtExceptionHandlerUITests/Info.plist;

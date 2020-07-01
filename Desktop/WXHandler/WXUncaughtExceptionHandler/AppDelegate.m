@@ -21,16 +21,16 @@
     
     
     //简单调用
-    //InstanceWXUncaughtExceptionHandler();
+    InstanceWXUncaughtExceptionHandler();
     
-    //链式调用 是否显示警告框 是否显示错误信息 是否回调日志地址
-    InstanceWXUncaughtExceptionHandler().showAlert(YES).showErrorInfor(YES).getlogPathBlock(^(NSString *logPathStr){
-        NSLog(@"程序异常日志地址 == %@",logPathStr);
-    });
-    
-    //当然我们也可以直接直接获取日志文件地址
-    NSString *logFilePath = InstanceWXUncaughtExceptionHandler().logFilePath;
-    NSLog(@"-----%@", logFilePath);
+//    //链式调用 是否显示警告框 是否显示错误信息 是否回调日志地址
+//    InstanceWXUncaughtExceptionHandler().showAlert(YES).showErrorInfor(YES).getlogPathBlock(^(NSString *logPathStr){
+//        NSLog(@"程序异常日志地址 == %@",logPathStr);
+//    });
+//    
+//    //当然我们也可以直接直接获取日志文件地址
+//    NSString *logFilePath = InstanceWXUncaughtExceptionHandler().logFilePath;
+//    NSLog(@"-----%@", logFilePath);
     
     return YES;
 }

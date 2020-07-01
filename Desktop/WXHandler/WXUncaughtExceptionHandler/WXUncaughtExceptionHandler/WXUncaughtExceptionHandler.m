@@ -44,12 +44,22 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 #pragma mark - 设置日志存取的路径
 - (void)uiConfig{
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *filePath = [docPath stringByAppendingPathComponent:@"WXUncaughtExceptionHandlerLog.txt"];
+    NSString *rarFilePath = [docPath stringByAppendingPathComponent:@"/Caches/CrashLog/"];
+    
+    NSString *dataFilePath = [rarFilePath stringByAppendingPathComponent:[NSString stringWithFormat:@"crashLog_%@.txt",[self getGMTTimeWithType:@"yyyy-HH-dd"]]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    if (![fileManager fileExistsAtPath:filePath]) {
-        [fileManager createFileAtPath:filePath contents:[@"~~~~~~~~~~~~~~~~~~程序异常日志~~~~~~~~~~~~~~~~~~\n\n" dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+    BOOL isDir = NO;
+    BOOL dataIsDir = NO;
+    // fileExistsAtPath 判断一个文件或目录是否有效，isDirectory判断是否一个目录
+    BOOL existed = [fileManager fileExistsAtPath:rarFilePath isDirectory:&isDir];
+    BOOL dataExisted = [fileManager fileExistsAtPath:dataFilePath isDirectory:&dataIsDir];
+    if ( !(isDir == YES && existed == YES) ) {//如果文件夹不存在
+        [fileManager createDirectoryAtPath:rarFilePath withIntermediateDirectories:YES attributes:nil error:nil];
     }
-    self.logFilePath = filePath;
+    if (!(dataIsDir == YES && dataExisted == YES) ) {
+        [fileManager createFileAtPath:dataFilePath contents:[@"~~~~~~~~~~~~~~~~~~程序异常日志~~~~~~~~~~~~~~~~~~\n\n" dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+    }
+    self.logFilePath = dataFilePath;
 }
 
 - (void)handleException:(NSException *)exception{
@@ -118,6 +128,7 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 #pragma mark - 保存错误信息日志
 - (void)validateAndSaveCriticalApplicationData:(NSException *)exception{
     NSString *exceptionMessage = [NSString stringWithFormat:NSLocalizedString(@"\n******************** %@ 异常原因如下: ********************\n%@\n%@\n==================== End ====================\n\n", nil), [self currentTimeString], [exception reason], [[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]];
+//    CKLog_(@"crash-desc:%@",exceptionMessage);
     NSFileHandle *handle = [NSFileHandle fileHandleForUpdatingAtPath:self.logFilePath];
     [handle seekToEndOfFile];
     [handle writeData:[exceptionMessage dataUsingEncoding:NSUTF8StringEncoding]];
@@ -154,7 +165,20 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
         return [WXUncaughtExceptionHandler shareInstance];
     };
 }
-
+    //获取GMT时间
+-(NSString*) getGMTTimeWithType:(NSString *)type{
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    dateFormatter.dateFormat = type;
+        //设置使用公历
+    NSCalendar *calendar =[[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    [dateFormatter setCalendar:calendar];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];//Asia/Beijing
+    
+//    NSTimeZone *gmtZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+//    [dateFormatter setTimeZone:gmtZone];
+    NSString *timeStamp = [dateFormatter stringFromDate:[NSDate date]];
+    return timeStamp;
+}
 @end
 
 
@@ -192,5 +216,10 @@ WXUncaughtExceptionHandler *InstanceWXUncaughtExceptionHandler(void){
     signal(SIGFPE, SignalHandler);
     signal(SIGBUS, SignalHandler);
     signal(SIGPIPE, SignalHandler);
+    signal(SIGHUP, SignalHandler);
+    signal(SIGINT, SignalHandler);
+    signal(SIGQUIT, SignalHandler);
+
     return [WXUncaughtExceptionHandler shareInstance];
 }
+
